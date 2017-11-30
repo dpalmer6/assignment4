@@ -2,6 +2,36 @@
 <html lang="en">
 
 <head>
+    <style>
+    table,
+    th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+    
+        td {
+            color: #000;
+            padding: 10px;
+            text-align: center;
+            width: auto;
+            
+        }
+        
+        th {
+            background-color: white
+        }
+    
+        tr:nth-child(even) {
+            background-color: aquamarine;
+        }
+    
+        tr:nth-child(odd) {
+            background-color: yellow;
+        }
+        
+    </style>
     <meta charset="utf-8">
     <title>McFast Food</title>
     <link rel="stylesheet" href="css/styles.css">
@@ -11,24 +41,70 @@
     <img src="images/mclogo.png" alt="McDonalds Logo" height="100">
     <a class="topics" href="index.html">Home</a>
     <h1>McDonalds</h1>
-     <h2 class="h2-special">Are you lovin' it?</h2>
-
-    
-<h1> How was your visit?<br> 
-    Let us know!</h1>
-<form method=”get”>
-    <label>First Name: <input type="text" name="fname" id="fname"> </label><br><br>
-    <label>Last Name: <input type="text" name="lname" id="lname"> </label><br><br>
-    <label>Email: <input type="text" name="email" id="email"> </label><br><br>
-    <label for="comments">Comments</label><br>
-    <textarea name="comments" id="comments" rows="4" cols="40"> </textarea>
-<br>
-<br>
-<input type=”submit” values=”Sign Me Up!”> <input type=”reset”>
-</form>
+    <h2 class="h2-special">Are you lovin' it?</h2>
 
 
-    
+    <h1> How was your visit?<br> Let us know!</h1>
+
+
+    <div class="contact-form">
+        <form style="width: 85%; margin: auto;">
+            <table>
+                <tr>
+                    <th><label for="firstname">First Name: </label></th>
+                    <td><input type="text" name="firstname" id="firstname"></td>
+                </tr>
+                <tr>
+                    <th><label for="lastname">Last Name: </label></th>
+                    <td><input type="text" name="lastname" id="lastname"></td>
+                </tr>
+                <tr>
+                    <th><label for="email">E-mail: </label></th>
+                    <td><input type="text" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <th><label for="comments">Comments:</label></th>
+                    <td><textarea name="comments" id="comments" rows="4" cols="40"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" id="submit" value="Submit">
+                        <input type="reset" id="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+
+
+        <table>
+            <tr>
+                <td colspan="6">
+                </td>
+            </tr>
+            <tr>
+                <th>Model</th>
+                <th>Range</th>
+                <th>Charging Station</th>
+                <th>Superchariging time</th>
+                <th>Supercharge Cost</th>
+                <th>0-60</th>
+            </tr>
+            <tr>
+                <td>S</td>
+                <td>259</td>
+                <td>Hours</td>
+                <td>Minutes</td>
+                <td>Free</td>
+                <td>50</td>
+            </tr>
+            <tr>...</tr>
+            <tr>...</tr>
+            <tr>...</tr>
+            <tr>...</tr>
+        </table>
+
 
 
 
